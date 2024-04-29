@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    /* display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-size: cover; */
+}
+.logo
+{
+    width: 140px;
+    cursor:  pointer;
+}
+
+.form {
+    width: 100%;
+    max-width: 650px;
+    background: transparent;
+    padding: 28px;
+    margin: 0 auto; /* Set left and right margins to auto */
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2.5px;
+    display: flex; /* To use align-items property, you need a flex container */
+    justify-content: center; /* Horizontally center the flex items */
+    margin-bottom: 100px;/* Add space at the bottom */
+}
+
+
+label{
+    font-family:'Courier New', monospace;
+}
+/* .form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: black;
+    text-shadow: 2px 2px 2px rgb(100, 81, 81);
+    border-bottom: solid 1px white;
+} */
+.title{
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    color: red;
+}
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.form-submit-btn button {
+    width: 80px;
+    margin: 1rem;
+    font-size: 15px;
+    padding: 10px;
+    border: solid;
+    border-width: 1.5px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+/* #delete:hover{
+    background-color: red;
+}
+#update:hover{
+    background-color: green;
+}
+#search:hover{
+    background-color: rgb(71, 154, 126);
+} */
+#insert:hover{
+    background-color: rgb(255, 156, 156);
+    color: black;
+}
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+}

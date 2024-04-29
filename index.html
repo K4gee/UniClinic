@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Clinic</title>
+    <link rel="stylesheet" href="portfolio_style.css">
+    <script src="https://kit.fontawesome.com/a7b8ce4686.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <video autoplay loop muted id="video-background">
+        <source src="images/Abstract_wave_simple_2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/UC Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Appointment</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <li><a href="login.html">Logout</a></li> -->
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <!-- <audio id="clickSound" src="pokemon_click.mp3"></audio> -->
+            </nav>
+            <div class="header-text">
+                <p>University Clinic</p>
+                <h1>Welcome to <span>UniClinic</span><br>Glad You're Here!</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- !------------------------------------ABOUT SECTION-----------------------------------! -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/UC Logo.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About UniClinic</h1>
+                <p>"Welcome to UniClinic, where we're dedicated to providing comprehensive healthcare services to support the well-being of our campus community. With a team of experienced professionals, state-of-the-art facilities, and a commitment to student health and wellness, we strive to promote a healthy and thriving campus environment. Learn more about our mission, values, and services as we work together to prioritize your health and happiness."</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Doctors</p>
+                    <p class="tab-links" onclick="opentab('experience')">ID Numbers</p>
+                    <p class="tab-links" onclick="opentab('education')">Address</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Doctor 1</span><br>Ortiz, Kacie A.</li>
+                        <li><span>Doctor 2</span><br>Doncillo, Angela Vier E.</li>
+                        <li><span>Doctor 3</span><br>Bandal, Judens</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Doctor ID</span><br>204155</li>
+                        <li><span>Doctor ID</span><br>212886</li>
+                        <li><span>Doctor ID</span><br>212482</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Northern Samar</span><br>UEP, Zone 3</li>
+                        <li><span>Northern Samar</span><br>Libertad, Lavezares</li>
+                        <li><span>Northern Samar</span><br>UEP, Zone 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- !------------------------------------SERVICES SECTION-----------------------------------! -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Our Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-suitcase-medical"></i>
+                <h2>Primary Care Services</h2>
+                <p>Comprehensive medical care for students, faculty, and staff, offering routine check-ups, vaccinations, and personalized health advice on campus.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>Mental Health Counseling</h2>
+                <p>Providing individual and group therapy sessions, workshops, and resources to support students in managing stress, anxiety, depression, and other mental health challenges.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h2>Health Education Program</h2>
+                <p>Empowering students with knowledge and skills through workshops and seminars on topics such as sexual health, nutrition, substance abuse prevention, and stress management, fostering a culture of wellness on campus.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- !------------------------------------PORTFOLIO SECTION-----------------------------------! -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Doctors</h1>
+        <div class="projects-list">
+            <div class="project">
+                <img src="images/Kc.jpg"/>
+                <div class="layer">
+                    <h3>Dra. Ortiz</h3>
+                    <p>Click the button below to see profile.</p>
+                    <a href="https://www.facebook.com/profile.php?id=61550664572683"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/Angela.jpg"/>
+                <div class="layer">
+                    <h3>Dra. Doncillo</h3>
+                    <p>Click the button below to see profile.</p>
+                    <a href="https://www.facebook.com/profile.php?id=100008525671862"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/Judens.jpg"/>
+                <div class="layer">
+                    <h3>Dr. Bandal</h3>
+                    <p>Click the button below to see profile.</p>
+                    <a href="https://www.facebook.com/imjudens"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="Appointment/index.html" class="btn">Make an Appointment</a>
+    </div>
+</div>
+
+    <!-- !------------------------------------CONTACT SECTION-----------------------------------! -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Us</h1>
+                <p style="color: rgb(11, 11, 11);"><a href="mailto:ortizkacie16@gmail.com">
+                <i class="fa-solid fa-paper-plane"></i></a>UniClinic@gmail.com</p>
+                <p style="color: rgb(0, 0, 0);"><a href="sms:09817782285"></a><i class="fa-solid fa-square-phone"></i></a>09817782285</p>
+                <!-- <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61550664572683"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/KneedsWelp?t=4cx9EsHEUVffE8b0NXwm0Q&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/kisbotqt/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@k4gee3"><i class="fa-brands fa-tiktok"></i></a>
+                </div> -->
+                <!-- <a href="myCV.pdf" download class="btn btn2">Download CV</a> -->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <p>Copyright © Secret. Made with Secret</p>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) 
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu()
+    {
+        sidemenu.style.right = "0";
+    }
+    function closemenu()
+    {
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwIpbGRubvyuSDkwVIpwji6sYvly9ygrSRoVPWiY0nzO-PMjcPPKQZMxmBLk12YcQTO/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => 
+        {
+            msg.innerHTML = "I got your message!"
+            msg.style.color = "white";
+            setTimeout(function()
+            {
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<!-- !------------------------------------SCRIPT-----------------------------------! -->
+
+
+<!-- <script>
+    // Function to play the click sound
+    function playClickSound() {
+        var sound = document.getElementById("clickSound");
+        sound.play();
+    }
+
+    // Add a click event listener to each button
+    var buttons = document.querySelectorAll("ul li a");
+    buttons.forEach(function(button) {
+        button.addEventListener("click", playClickSound);
+    });
+</script> -->
+
+</body>
+</html>
